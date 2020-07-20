@@ -19,7 +19,8 @@ import UserGreeting from'./Chapter16/UserGreeting';
  import NameLists from './Chapter19/NameLists';
  import CSSStylesheet from './Chapter20/CSSStylesheet'
  import Inline from './Chapter20/Inline';
- import Form from './Chapter21/Form'
+ import Form from './Chapter21/Form';
+ import LifeCycleA from './Chapter22and23/LifeCycleA'
   let sav=0;
  
 class App extends React.Component {
@@ -60,8 +61,10 @@ san=()=>{
       <CSSStylesheet/>
       <Inline/>
       <h1 className={styles.success}>App.module.css</h1>
-       <h1 className="error">App.css</h1>*/}
-       <Form/>
+       <h1 className="error">App.css</h1>
+        <Form/>*/}
+      
+       <LifeCycleA count={3}/>
       </div>
   );
  
