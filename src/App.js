@@ -20,7 +20,9 @@ import UserGreeting from'./Chapter16/UserGreeting';
  import CSSStylesheet from './Chapter20/CSSStylesheet'
  import Inline from './Chapter20/Inline';
  import Form from './Chapter21/Form';
- import LifeCycleA from './Chapter22and23/LifeCycleA'
+ import LifeCycleA from './Chapter22and23/LifeCycleA';
+ import ComponentA from './Chapter24/ComponentA';
+ import Fragment from './Chapter25/Fragment'
   let sav=0;
  
 class App extends React.Component {
@@ -62,9 +64,11 @@ san=()=>{
       <Inline/>
       <h1 className={styles.success}>App.module.css</h1>
        <h1 className="error">App.css</h1>
-        <Form/>*/}
+        <Form/>
+        <LifeCycleA count={3}/>
+        <ComponentA count={0}/>*/}
       
-       <LifeCycleA count={3}/>
+       <Fragment/>
       </div>
   );
  
