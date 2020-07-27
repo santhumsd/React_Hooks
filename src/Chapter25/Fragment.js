@@ -4,7 +4,7 @@ import Fragment1 from './Fragment1'
 class Fragment extends Component {
     render() {
         return (
-            <React.Fragment>
+             <>{}
                 <h1>Hi Santhosh</h1>
                 <table>
                     <tbody>
@@ -13,7 +13,7 @@ class Fragment extends Component {
                         </tr>
                     </tbody>
                 </table>
-            </React.Fragment>
+            </>
         )
     }
 }

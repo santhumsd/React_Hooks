@@ -1,5 +1,7 @@
 .App {
   text-align: center;
+  animation-name: san;
+  animation-duration: 1s;
 }
 
 .App-logo {
@@ -39,4 +41,18 @@
 
 .error{
   color:red;
+}
+
+@keyframes san{
+  0% {
+    opacity: 0;
+      transform:translate(-100px) ;
+  }
+  80% {
+    transform:translate(10px) ;
+  }
+  100% {
+    opacity:1;
+    transform:translate(0px) ;
+  }
 }

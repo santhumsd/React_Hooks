@@ -22,7 +22,13 @@ import UserGreeting from'./Chapter16/UserGreeting';
  import Form from './Chapter21/Form';
  import LifeCycleA from './Chapter22and23/LifeCycleA';
  import ComponentA from './Chapter24/ComponentA';
- import Fragment from './Chapter25/Fragment'
+ import Fragment from './Chapter25/Fragment';
+ import ParentComp from './Chapter26/ParentComp';
+ import ParentCompMemo from './Chapter27/ParentCompMemo';
+ import RefDemo from './Chapter28/RefsDemo';
+ import FocusInput from './Chapter29/FocusInput';
+ import FRParentInput from './Chapter30/FRParentInput';
+ import PortalDemo from './Chapter31/PortalDemo';
   let sav=0;
  
 class App extends React.Component {
@@ -63,12 +69,17 @@ san=()=>{
       <CSSStylesheet/>
       <Inline/>
       <h1 className={styles.success}>App.module.css</h1>
-       <h1 className="error">App.css</h1>
-        <Form/>
-        <LifeCycleA count={3}/>
-        <ComponentA count={0}/>*/}
-      
-       <Fragment/>
+      <h1 className="error">App.css</h1>
+      <Form/>
+      <LifeCycleA count={3}/>
+      <ComponentA count={0}/>
+      <Fragment/>
+      <ParentComp/>
+      <ParentCompMemo/>
+      <RefDemo/>
+      <FocusInput/>
+      <FRParentInput/>*/}
+      <PortalDemo/>
       </div>
   );
  
