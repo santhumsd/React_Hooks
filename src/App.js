@@ -99,8 +99,8 @@ san=()=>{
         <ClickCount/>
        <HoverCount/>*/}
       
-       <ClickCount1/>
-       <HoverCount1/>
+       <ClickCount1 name="santhosh"/>
+       <HoverCount1 name="sanjeev"/>
       </div>
   );
  
