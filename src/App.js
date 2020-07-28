@@ -29,6 +29,13 @@ import UserGreeting from'./Chapter16/UserGreeting';
  import FocusInput from './Chapter29/FocusInput';
  import FRParentInput from './Chapter30/FRParentInput';
  import PortalDemo from './Chapter31/PortalDemo';
+ import ErrorBounding from './Chapter32/ErrorBounding';
+ import Hero from './Chapter32/Hero';
+ import ClickCount from './Chapter33/ClickCount';
+ import HoverCount from './Chapter33/HoverCount';
+ import HoverCount1 from './Chapter34&35/HoverCount1';
+ import ClickCount1 from './Chapter34&35/ClickCount1';
+
   let sav=0;
  
 class App extends React.Component {
@@ -78,8 +85,22 @@ san=()=>{
       <ParentCompMemo/>
       <RefDemo/>
       <FocusInput/>
-      <FRParentInput/>*/}
+      <FRParentInput/>
       <PortalDemo/>
+      <ErrorBounding>
+       <Hero hero={"santhosh"}/>
+       </ErrorBounding>
+       <ErrorBounding>
+       <Hero hero={"joker"}/>
+       </ErrorBounding>
+       <ErrorBounding>
+       <Hero  hero={"sanju"}/>
+       </ErrorBounding>
+        <ClickCount/>
+       <HoverCount/>*/}
+      
+       <ClickCount1/>
+       <HoverCount1/>
       </div>
   );
  
