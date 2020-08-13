@@ -35,6 +35,11 @@ import UserGreeting from'./Chapter16/UserGreeting';
  import HoverCount from './Chapter33/HoverCount';
  import HoverCount1 from './Chapter34&35/HoverCount1';
  import ClickCount1 from './Chapter34&35/ClickCount1';
+ import ClickCounterTwo from './Chapter36/ClickCounterTwo';
+ import HoverCounterTwo from './Chapter36/HoverCounterTwo';
+ import CounterPropsRender from './Chapter37/CounterPropsRender';
+import ComponentC from './Chapter38&39/ComponentC';
+import { UserProvider } from './Chapter38&39/UserContext';
 
   let sav=0;
  
@@ -46,7 +51,6 @@ class App extends React.Component {
   }
 san=()=>{
   this.setState({count: this.state.count+1})
-
 }
   render(){
     
@@ -97,10 +101,24 @@ san=()=>{
        <Hero  hero={"sanju"}/>
        </ErrorBounding>
         <ClickCount/>
-       <HoverCount/>*/}
-      
-       <ClickCount1 name="santhosh"/>
+       <HoverCount/>
+        <ClickCount1 name="santhosh"/>
        <HoverCount1 name="sanjeev"/>
+        <CounterPropsRender rr={(count,incrementCount)=>
+      (
+        <ClickCounterTwo count={count} incrementCount={incrementCount}/>
+      )
+      }/>
+       
+       <CounterPropsRender rr={(count,incrementCount)=>
+        (<HoverCounterTwo count={count} incrementCount={incrementCount}/>)
+       }/>*/}
+      <UserProvider value="santhosh MS">
+      <ComponentC/>
+      </UserProvider>
+      
+      
+       
       </div>
   );
  
