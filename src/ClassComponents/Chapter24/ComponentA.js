@@ -6,7 +6,8 @@ class ComponentA extends Component {
         super(props)
     
         this.state = {
-             count:this.props.count
+             count:this.props.count,
+             name:""
         }
         console.log("ComponentA constructor(prps)")
     }
@@ -29,7 +30,11 @@ class ComponentA extends Component {
         return null;
     }
     componentDidUpdate(prevProps,prevState,snapShot){// function parameters are optional
-        console.log("ComponentA componentDidUpdate()",prevProps,prevState,snapShot)
+         if(prevState.count!==this.state.count){
+             console.log("updateing the document title")
+             document.title=`you clicked${this.state.count} times`
+         }
+         console.log("ComponentA componentDidUpdate()",prevProps,prevState,snapShot)
     }
     increment=()=>{
         this.setState({
@@ -40,6 +45,11 @@ class ComponentA extends Component {
         console.log("ComponentA render() ")
         return (
             <div>
+                <input 
+                    value={this.state.name}
+                    onChange={(e)=>this.setState({
+                        name:e.target.value
+                    })}/>
                 <h1>{this.state.count}</h1>
                 <button onClick={this.increment}>increment</button>
                 <h1>component A</h1>
